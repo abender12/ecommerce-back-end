@@ -23,14 +23,14 @@ router.get('/:id', (req, res) => {
 
 // create new product
 router.post('/', (req, res) => {
-  Product.create(req.body)
-    .then((newProduct) => {
-      res.json(newProduct);
-    })
-    .catch((err) => {
-      res.json(err);
-    });
-});
+//   Product.create(req.body)
+//     .then((newProduct) => {
+//       res.json(newProduct);
+//     })
+//     .catch((err) => {
+//       res.json(err);
+//     });
+// });
   /* req.body should look like this...
     {
       product_name: "Basketball",
@@ -59,7 +59,7 @@ router.post('/', (req, res) => {
       console.log(err);
       res.status(400).json(err);
     });
-
+  });
 // update product
 router.put('/:id', (req, res) => {
   // update product data
